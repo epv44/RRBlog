@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   #:get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -9,7 +11,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  root 'welcome#index'
+  root "articles#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
