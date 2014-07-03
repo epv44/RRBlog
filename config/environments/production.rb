@@ -87,6 +87,6 @@ Rails.application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
   # Do not dump schema after migrations.
-  config.action_mailer.default_url_options = { host: 'www.murmuring-depths-4307.herokuap.com' }
+  config.action_mailer.default_url_options = { host: 'www.blooming-chamber-9311.herokuap.com' }
   config.active_record.dump_schema_after_migration = false
 end
