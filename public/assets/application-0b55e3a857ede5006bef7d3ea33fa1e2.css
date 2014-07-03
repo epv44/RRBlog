@@ -1,10 +1,11 @@
-/*!
+@charset "utf-8";/*!
  * Bootstrap v3.1.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -2137,7 +2138,7 @@ fieldset[disabled] .btn-primary.active {
   border-color: #357ebd;
 }
 .btn-primary .badge {
-  color: #428bca; !important
+  color: #428bca;
   background-color: #fff;
 }
 .btn-success {
@@ -6027,3 +6028,725 @@ body.home .one-col, body.page .one-col {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
+
+/*
+Theme Name: Blog
+Version: 1.0
+Author: Eric Vennaro
+*/
+
+
+/******************  Table of Contents  *****************************/
+
+/*
+
+1. GLOBAL STYLES
+2. HEADER
+3. HERO IMAGE
+4. FEATURES
+5. TESTIMONIALS
+6. PLANS AND PRICING
+7. FAQ
+8. FOOTER
+9. CUSTOM MEDIA QUERIES
+10. Navbar
+
+
+If you having trouble in editing css. please send a mail to support@surjithctly.in - 
+I will really help you
+
+*/
+
+
+
+/*========== 1. GLOBAL STYLES ==============*/
+
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight:400;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color:#000;
+	width: 100%;
+	font-size: 20px;
+}
+strong, b {
+	font-weight:600;
+}
+h1 {
+	font-size:50px;
+	line-height:60px;
+	margin:21px 0;
+}
+h2 {
+	font-size:40px;
+	font-weight:600;
+	margin:15px 0;
+}
+h3 {
+	font-size:20px;
+	margin:10px 0;
+	font-weight:600;
+	text-align: center;
+}
+h4 {
+	font-size:20px;
+	margin:10px 0;
+}
+h5 {
+	font-size:28px;
+	font-weight:600;
+	margin:15px 0;
+	color: #384047;
+}
+h6 {
+	font-size:16px;
+	font-weight:600;
+	margin:10px 0;
+	color: #384047;
+}
+a {
+	color:#5173bd;
+}
+a:hover, a:focus {
+	color:#5173bd;
+}
+
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	z-index: 9999999;
+	position: fixed;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #fff;/*border: 1px solid #e34e47;*/
+}
+.pace .pace-progress {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: width 1s ease-in-out 1s linear;
+	-moz-transition: width 1s ease-in-out 1s linear;
+	-ms-transition: width 1s ease-in-out 1s linear;
+	-o-transition: width 1s ease-in-out 1s linear;
+	transition: width 1s ease-in-out 1s linear;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	max-width: 100%;
+	position: fixed;
+	z-index: 9999999;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	background: #61b5f0;
+}
+.pace.pace-inactive {
+	display: none;
+}
+.btn, .btn-lg, .input-lg {
+	border-radius:3px;
+}
+.form-control {
+	border-radius: 3px;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border: 0;
+}
+.input-lg {
+	height: 55px;
+}
+.btn-lg, .btn-group-lg > .btn {
+	padding: 10px 28px;
+	height: 52px;
+}
+.breath {
+	margin:50px auto;
+}
+.highlight {
+	background:#f4f4f4;
+	margin-top:0px;
+}
+
+div#container {
+    position:relative;
+    width:100%;
+    margin:0 auto;
+    background-color: #ccffff;
+    background-image: url(img/largeOwl.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    height:auto !important;
+    height:100%;
+
+    min-height:100%;
+}
+
+/*========== 2. HEADER ==============*/
+
+.masthead {
+	position: relative;
+	padding: 48px 15px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+	background-color: #6883cc;
+	background-image:url(img/largeOwl.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/* Initial Subtle Animation*/
+
+.masthead .container {
+	animation: fadein 2s;
+	-moz-animation: fadein 2s; /* Firefox */
+	-webkit-animation: fadein 2s; /* Safari and Chrome */
+	-o-animation: fadein 2s; /* Opera */
+}
+.loading * {
+	-webkit-animation: none !important;
+	-moz-animation: none !important;
+	-ms-animation: none !important;
+	-o-animation: none !important;
+}
+ @keyframes fadein {
+ from {
+ opacity:0;
+ -webkit-transform: translateY(-30px);
+-moz-transform: translateY(-30px);
+transform: translateY(-30px);
+}
+to {
+	opacity:1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+}
+}
+@-moz-keyframes fadein { /* Firefox */
+ from {
+ opacity:0;
+ -webkit-transform: translateY(-30px);
+-moz-transform: translateY(-30px);
+transform: translateY(-30px);
+}
+to {
+	opacity:1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+ from {
+ opacity:0;
+ -webkit-transform: translateY(-30px);
+-moz-transform: translateY(-30px);
+transform: translateY(-30px);
+}
+to {
+	opacity:1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+}
+}
+@-o-keyframes fadein { /* Opera */
+ from {
+ opacity:0;
+ -webkit-transform: translateY(-30px);
+-moz-transform: translateY(-30px);
+transform: translateY(-30px);
+}
+to {
+	opacity:1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+}
+}
+/*animation ends*/
+
+.logo {
+	padding: 30px 0;
+	text-align:center;
+}
+.btn-large {
+	font-size:18px;
+	padding:20px 50px;
+	margin:5px 10px;
+}
+.btn-success {
+	background-color: #2ecc71;
+	background-image:none;
+	border: 0;
+	-webkit-box-shadow: 0 3px 0 rgba(2, 154, 67, 1);
+	box-shadow: 0 3px 0 rgba(2, 154, 67, 1);
+	line-height: 1.8;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+	background-color: #29c36a;
+	color:#FFF;
+	border: 0;
+	-webkit-box-shadow: 0 3px 0 rgba(2, 139, 61, 1);
+	box-shadow: 0 3px 0 rgba(2, 139, 61, 1);
+}
+.btn-primary {
+	background-color: #2db6d8;
+	background-image:none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+	background-color: #209ab8!important;
+	color:#FFF!important;
+}
+.subscribe {
+	padding: 30px 0;
+}
+.alertMsg {
+	float: left;
+	font-size: 14px;
+	display: block;
+	padding: 5px 17px;
+}
+
+
+/* Boucing Arrow Animation */
+
+@keyframes arrowbounce {
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-moz-keyframes arrowbounce { /* Firefox */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-webkit-keyframes arrowbounce { /* Safari and Chrome */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+@-o-keyframes arrowbounce { /* Opera */
+from {
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+transform: translateY(0);
+}
+to {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+}
+.scrollto, .scrollto:hover {
+	margin:30px;
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	width:200px;
+	margin:0 auto;
+}
+.scrollto--arrow {
+	padding:10px;
+	text-shadow: 1px 2px 2px #666;
+}
+.scrollto--arrow img {
+	animation: arrowbounce 1s alternate infinite;
+	-moz-animation: arrowbounce 1s alternate infinite; /* Firefox */
+	-webkit-animation: arrowbounce 1s alternate infinite; /* Safari and Chrome */
+	-o-animation: arrowbounce 1s alternate infinite; /* Opera */
+}
+/*========== 3. HERO IMAGE ==============*/
+
+.section-title {
+	text-align:left;
+	/* margin-top:60px; */
+	margin-bottom:30px;
+}
+
+.section-title h2 {
+	color:#384047;
+}
+
+.section-title h4 {
+	color:#94a3a8;
+}
+
+.section-titleEV {
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.section-titleEV h2{
+	color:#384047;
+}
+
+.section-titleEV h4{
+	color:#94a3a8;
+}
+
+.heroimg img, .clientlogo img {
+	max-width:100%;
+}
+
+
+
+/*==========8. FOOTER ==============*/
+
+
+.footercta {
+	padding: 60px 15px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+	background-color: #6883cc;
+	background-image:url(img/Dog12.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.footerlinks {
+	text-align:center;
+	font-size: 16px;
+}
+.footerlinks a {
+	text-align:center;
+	padding:0 13px;
+	display:inline-block;
+	padding-bottom: 15px;
+}
+.sub-footer{
+	background-color: #fff;
+}
+/*==========9. About Page =========*/
+.clientblock {
+	margin-top:40px;
+	margin-left:10px;
+}
+.clientblock top1 {
+	margin-top: 1px;
+	margin-left: 10px;
+}
+.clientblock img {
+	float:left;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	padding-top: 20px;
+}
+.clientblock p {
+	padding-left:80px;
+	padding-top:13px;
+}
+
+.clientblock p strong {
+	color:#384047;
+	font-size:36px;
+}
+.clientblock-top1 {
+	margin-top: 1px;
+	margin-left:10px;
+}
+.clientblock-top1 img {
+	float:left;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	padding-top: 20px;
+}
+.clientblock-top1 p {
+	padding-left:80px;
+	padding-top:13px;
+}
+
+.clientblock-top1 p strong {
+	color:#384047;
+	font-size:36px;
+}
+.pad-strong{
+	padding-left: 75px;
+}
+
+/*====== Simple Form Stylings =====*/
+
+.simple_form div.input {
+  margin-bottom: 10px;
+  clear: both; /* Required for Webkit, but not for Gecko */
+}
+
+.simple_form label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin: 2px 10px;
+}
+
+div.boolean, .simple_form input[type='submit'] {
+ 
+}
+
+div.boolean label, label.collection_radio_buttons {
+  float: none;
+  margin: 0;
+}
+
+label.collection_radio_buttons {
+  margin-right: 10px;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+
+.field_with_errors {
+  background-color: #ff3333;
+}
+
+.simple_form .error {
+  clear: left;
+  color: black;
+  display: block;
+  margin-left: 120px;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
+
+input.radio {
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+
+input.check_boxes {
+  margin-left: 3px;
+  vertical-align: -3px;
+}
+
+label.collection_check_boxes {
+  float: none;
+  margin: 0;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+.special-label label{
+
+  float: left;
+  width: 150px;
+  text-align: right;
+  vertical-align: center;
+  margin: 2px -20px;
+  padding-right: 50px;
+}
+/*--------------------------------
+Functional Styles (Required)
+---------------------------------*/
+
+
+.header { position: relative; }
+#toggle, .toggle { display: none; }
+.menu > li { list-style: none; float:left;	}
+
+/* Nicolas Gallagher micro clearfix */
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+@media only screen and (max-width: 768px){
+.menu { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
+.menu > li { display: block; width: 100%; margin: 0; }
+.menu > li > a { display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+#toggle:checked + div .menu { display: block; opacity: 1;}
+}
+
+
+/*--------------------------------
+Presentation Styles (Editable)
+---------------------------------*/
+.header{
+min-height: 100px;
+height: 100%;
+padding: 0 20px;
+background: #FFFFFF;
+}
+
+.header > h1 {
+float: left;
+padding: 0px 0 0;	
+font-style: italic;
+font-family: Georgia;
+font-size: 28px;
+color: #DFDFDF;
+}
+
+.nav{
+display: block;
+float: right;
+}
+
+.nav, .menu, .menu > li, .menu > li > a{
+height: 100%;
+}
+
+.menu > li > a{
+display: block;
+padding: 42px 20px;
+text-decoration: none;
+font-weight: 500;
+font-size: 18px;
+line-height: 1;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+-o-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.menu > li > a:hover, .menu > li > a:focus{
+background: #F2F2F2;
+box-shadow: inset 0px 5px #51C1F1;
+color: #51C1F1;
+padding: 50px 20px 34px;
+}
+
+.toggle{
+z-index: 2;
+}
+
+@media only screen and (max-width: 768px){
+.menu{
+background: #FFFFFF;
+border-top: 1px solid #51C1F1;
+}
+
+.menu, .menu > li, .menu > li > a{
+height: auto;
+}
+
+.menu > li > a{
+padding: 15px 15px;
+}
+
+.menu > li > a:hover, .menu > li > a:focus{
+background: #F2F2F2;
+box-shadow: inset 5px 0px #51C1F1;
+padding: 15px 15px 15px 25px;
+}
+
+.toggle:after {
+content: attr(data-open);
+display: block;
+width: 200px;
+margin: 33px 0;
+padding: 10px 50px;
+background: #51C1F1;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+text-align: center;
+font-size: 12px;
+color: #FFFFFF;
+-webkit-transition: all 0.5s linear;
+-moz-transition: all 0.5s linear;
+-o-transition: all 0.5s linear;
+transition: all 0.5s linear;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.toggle:hover:after{
+background: #45ABD6;
+}
+
+#toggle:checked + div .toggle:after{
+content: attr(data-close);
+}
+}
+
+@media only screen and (max-width: 479px){
+.header > h1 {
+text-align: center;
+}
+.header > h1, .nav, .toggle:after{
+float: none;
+}
+.toggle:after {
+text-align: center; width: 100%;
+}
+}
+
+.source-image {
+width: 430px;
+margin-top: 12px;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ 
+
+
+
+
+ */
+

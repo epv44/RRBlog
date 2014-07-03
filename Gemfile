@@ -30,7 +30,10 @@ gem 'spring',        group: :development
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise', '3.2.4'
 gem 'foreman', '~> 0.74.0'
+gem 'friendly_id', '~> 5.0.4'
 gem 'unicorn', '~> 4.8.3'
+gem 'simple_form'
+gem 'mail_form', '~> 1.5.0'
 group :production do
 	gem 'pg', '0.15.1'
 	gem 'rails_12factor', '0.0.2'
