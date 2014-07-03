@@ -33,7 +33,7 @@ I will really help you
 
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight:300;
+	font-weight:400;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -374,7 +374,7 @@ to {
 
 .section-title {
 	text-align:left;
-	margin-top:60px;
+	/* margin-top:60px; */
 	margin-bottom:30px;
 }
 
@@ -436,4 +436,50 @@ to {
 }
 .sub-footer{
 	background-color: #fff;
+}
+/*==========9. About Page =========*/
+.clientblock {
+	margin-top:40px;
+	margin-left:10px;
+}
+.clientblock top1 {
+	margin-top: 1px;
+	margin-left: 10px;
+}
+.clientblock img {
+	float:left;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	padding-top: 20px;
+}
+.clientblock p {
+	padding-left:80px;
+	padding-top:13px;
+}
+
+.clientblock p strong {
+	color:#384047;
+	font-size:36px;
+}
+.clientblock-top1 {
+	margin-top: 1px;
+	margin-left:10px;
+}
+.clientblock-top1 img {
+	float:left;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	padding-top: 20px;
+}
+.clientblock-top1 p {
+	padding-left:80px;
+	padding-top:13px;
+}
+
+.clientblock-top1 p strong {
+	color:#384047;
+	font-size:36px;
+}
+.pad-strong{
+	padding-left: 75px;
 }

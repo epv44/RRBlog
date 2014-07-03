@@ -1,11 +1,12 @@
 <div class="header clearfix">
-	<h1> Header </h1>
+	<%= link_to image_tag("suddenstartlogo.png", class: "source-image", alt: "Sudden start entrepreneur blog"), root_path %> 
 	<div class="nav">
 		<input type="checkbox" id="toggle" />
 		<label for="toggle" class="toggle" onclick></label>
 		<ul class="menu">
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>			
+			<li><%= link_to "HOME", root_path %></li>
+			<li><%= link_to "ABOUT", about_path %></li>
+			<li><%= link_to "CONTACT", root_path %></li>	
 		</ul>
 	</div><!-- End of Navigation -->
 </div>

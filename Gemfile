@@ -6,6 +6,7 @@ gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 group :development do
 	gem 'sqlite3'
+	gem "better_errors"
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -28,7 +29,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise', '3.2.4'
-
+gem 'foreman', '~> 0.74.0'
+gem 'unicorn', '~> 4.8.3'
 group :production do
 	gem 'pg', '0.15.1'
 	gem 'rails_12factor', '0.0.2'

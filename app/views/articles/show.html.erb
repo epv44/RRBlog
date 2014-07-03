@@ -1,12 +1,7 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<% provide(:title, @article.title) %>
  
 <p>
-  <strong>Text:</strong>
   <%= @article.text %>
 </p>
  
-<%= link_to 'Edit Article', edit_article_path(@article) %> |
-<%= link_to 'Back to Articles', articles_path %>
+<%= link_to 'Back to Articles', root_path %>

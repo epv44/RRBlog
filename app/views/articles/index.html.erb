@@ -1,26 +1,11 @@
-<div id="container">
-  <div class="containerEV" id="explore"> 
-    <!--Description MANGO and advertisment plans -->
-    <div class="section-title one-col-main-page one-col box-full">
-      <div class="content-wrapper">
-        <div class="text-center">
-          <h1>Listing articles</h1>
-        </div>
-        <%= link_to 'New Article', new_article_path %>
-        <% @articles.each do |article| %>
-        <h2> <%= article.title %> </h2>
-        <p> <%= article.text[0,140] + ("...") %> </p>
-        <table>
-          <tr>
-            <td> <%= link_to 'Continue Reading', article_path(article) %> </td>
-            <td> <%= link_to 'Edit', edit_article_path(article) %></td>
-            <td><%= link_to 'Destroy', article_path(article),
-                       method: :delete,
-                       data: { confirm: 'Are you sure?'} %></td>
-          </tr>
-        </table>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<% provide(:title, 'Eating, Deadlifting and Starting Up') %>
+<% @articles.each do |article| %>
+<h2> <%= article.title %> </h2>
+<p> <%= article.text[0,140] + ("...") %> </p>
+<table>
+<tr>
+  <td> <%= link_to 'Continue Reading', article_path(article) %> </td>
+</tr>
+</table>
+<% end %>
+      
