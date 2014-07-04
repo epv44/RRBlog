@@ -158,7 +158,7 @@ div#container {
     width:100%;
     margin:0 auto;
     background-color: #ccffff;
-    background-image: image-url("largeOwl.jpg");
+    background-image: asset-data-url("largeOwl.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
