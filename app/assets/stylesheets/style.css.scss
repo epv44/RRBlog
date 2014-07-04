@@ -13,17 +13,9 @@ Author: Eric Vennaro
 1. GLOBAL STYLES
 2. HEADER
 3. HERO IMAGE
-4. FEATURES
-5. TESTIMONIALS
-6. PLANS AND PRICING
-7. FAQ
-8. FOOTER
-9. CUSTOM MEDIA QUERIES
-10. Navbar
-
-
-If you having trouble in editing css. please send a mail to support@surjithctly.in - 
-I will really help you
+4. FOOTER
+5. ABOUT PAGE
+6. SIMPLE FORM STYLING
 
 */
 
@@ -40,6 +32,19 @@ body {
 	color:#000;
 	width: 100%;
 	font-size: 20px;
+
+	position:relative;
+    width:100%;
+    margin:0 auto;
+    background-color: #ccffff;
+    background-image: url(../images/largeOwl.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    height:auto !important;
+    height:100%;
+
+    min-height:100%;
 }
 strong, b {
 	font-weight:600;
@@ -153,6 +158,7 @@ a:hover, a:focus {
 	margin-top:0px;
 }
 
+/*
 div#container {
     position:relative;
     width:100%;
@@ -167,7 +173,7 @@ div#container {
 
     min-height:100%;
 }
-
+*/
 /*========== 2. HEADER ==============*/
 
 .masthead {
@@ -432,7 +438,7 @@ to {
 
 
 
-/*==========8. FOOTER ==============*/
+/*==========4. FOOTER ==============*/
 
 
 .footercta {
@@ -441,7 +447,6 @@ to {
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 	background-color: #6883cc;
-	background-image:url(img/Dog12.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -453,17 +458,21 @@ to {
 .footerlinks {
 	text-align:center;
 	font-size: 16px;
+	background: #FFFFFF;
+	padding-top: 10px;
 }
 .footerlinks a {
 	text-align:center;
 	padding:0 13px;
 	display:inline-block;
 	padding-bottom: 15px;
+	background: #FFFFFF;
 }
 .sub-footer{
-	background-color: #fff;
+	background: #FFFFFF;
 }
-/*==========9. About Page =========*/
+
+/*==========5. About Page =========*/
 .clientblock {
 	margin-top: 40px;
 	margin-left: 10px;
@@ -510,7 +519,7 @@ to {
 	padding-left: 75px;
 }
 
-/*====== Simple Form Stylings =====*/
+/*======6. Simple Form Stylings =====*/
 
 .simple_form div.input {
   margin-bottom: 10px;
