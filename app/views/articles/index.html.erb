@@ -1,7 +1,7 @@
 <% provide(:title, 'Eating, Deadlifting and Starting Up') %>
 <% @articles.each do |article| %>
 <h2> <%= article.title %> </h2>
-<p> <%= article.text[0,140] + ("...") %> </p>
+<p> <%= truncate(article.text, :length => 140, :separator => ' ') %> </p>
 <table>
 <tr>
   <td> <%= link_to 'Continue Reading', article_path(article) %> </td>
