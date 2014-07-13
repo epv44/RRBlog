@@ -1,0 +1,16 @@
+Sun, 13 Jul 2014 12:35:33 -0400
+README.rdoc	Mon, 12 May 2014 10:25:23 -0400
+app/admin/admin_user.rb	Tue, 01 Jul 2014 20:14:30 -0400
+app/admin/article.rb	Wed, 02 Jul 2014 11:36:18 -0400
+app/admin/dashboard.rb	Wed, 02 Jul 2014 11:53:15 -0400
+app/controllers/about_controller.rb	Wed, 02 Jul 2014 16:05:52 -0400
+app/controllers/application_controller.rb	Mon, 12 May 2014 10:25:23 -0400
+app/controllers/articles_controller.rb	Thu, 03 Jul 2014 21:44:13 -0400
+app/controllers/contacts_controller.rb	Thu, 03 Jul 2014 12:58:12 -0400
+app/helpers/application_helper.rb	Wed, 02 Jul 2014 17:45:55 -0400
+app/helpers/articles_helper.rb	Mon, 12 May 2014 10:49:26 -0400
+app/models/admin_user.rb	Tue, 01 Jul 2014 20:14:30 -0400
+app/models/article.rb	Thu, 03 Jul 2014 12:50:07 -0400
+app/models/contact.rb	Thu, 03 Jul 2014 13:08:22 -0400
+app/models/user.rb	Wed, 02 Jul 2014 10:07:24 -0400
+app/services/create_admin_services.rb	Wed, 02 Jul 2014 10:11:05 -0400
