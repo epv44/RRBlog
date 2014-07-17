@@ -154,7 +154,7 @@ a:hover, a:focus {
 	height: 52px;
 }
 .breath {
-	margin:50px auto;
+	margin:0px auto;
 }
 .highlight {
 	background:#f4f4f4;
@@ -428,7 +428,6 @@ to {
 
 /*==========4. FOOTER ==============*/
 
-
 .footercta {
 	padding: 60px 15px;
 	color: #FFF;
@@ -448,6 +447,7 @@ to {
 	font-size: 16px;
 	background: #FFFFFF;
 	padding-top: 20px;
+	padding-bottom: 10px
 }
 .footerlinks a {
 	text-align:center;
@@ -580,3 +580,5 @@ label.collection_check_boxes {
   margin: 2px -20px;
   padding-right: 50px;
 }
+
+.fb-comments, .fb-comments iframe[style], .fb_iframe_widget > span[style] {width: 100% !important;}

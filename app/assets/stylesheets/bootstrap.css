@@ -747,6 +747,17 @@ pre code {
   }
 
 }
+
+@media (min-width: 268px ){
+  .containerEV p{
+    font-size: 16px !important;
+  }
+
+  .containerEV h2{
+    font-size: 24px;
+  }
+
+}
 @media (min-width: 992px) {
   .containerEV {
     width: 970px;
