@@ -744,17 +744,26 @@ pre code {
 @media (min-width: 768px) {
   .containerEV {
     width: 750px;
+
+  }
+
+  .containerEV p{
+    font-size: 2vw;
+  }
+
+  .containerEV h2{
+    font-size: 3.3vw;
   }
 
 }
 
 @media (min-width: 268px ){
   .containerEV p{
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
 
   .containerEV h2{
-    font-size: 24px;
+    font-size: 32px;
   }
 
 }
