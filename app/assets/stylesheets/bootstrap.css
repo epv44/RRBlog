@@ -741,6 +741,18 @@ pre code {
 .one-col{
   width: 100%;
 }
+
+
+@media (min-width: 268px ){
+  .containerEV p{
+    font-size: 18px;
+  }
+
+  .containerEV h2{
+    font-size: 32px;
+  }
+
+}
 @media (min-width: 768px) {
   .containerEV {
     width: 750px;
@@ -757,16 +769,7 @@ pre code {
 
 }
 
-@media (min-width: 268px ){
-  .containerEV p{
-    font-size: 18px !important;
-  }
 
-  .containerEV h2{
-    font-size: 32px;
-  }
-
-}
 @media (min-width: 992px) {
   .containerEV {
     width: 970px;
@@ -6015,9 +6018,18 @@ button.close {
 }
 
 /*======Blog text area =====*/
-.one-col {
-  padding:40px 17%;
 
+
+@media (min-width: 368px){
+  .one-col{
+    padding: 0px;
+  }
+}
+
+@media (min-width: 786px) {
+  .one-col{
+    padding:40px 17%;
+  }
 }
 
 body.home .one-col, body.page .one-col {
