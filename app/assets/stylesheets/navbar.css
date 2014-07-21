@@ -108,10 +108,9 @@ Presentation Styles (Editable)
 }
 
 @media only screen and (max-width: 708px){
-	.menu{
-		background: #FFFFFF;
-		border-top: 1px solid #51C1F1;
-	}
+.menu{
+	background: #FFFFFF;
+	border-top: 1px solid #51C1F1;
 }
 
 .menu, .menu > li, .menu > li > a{
@@ -156,6 +155,7 @@ Presentation Styles (Editable)
 
 #toggle:checked + div .toggle:after{
 	content: attr(data-close);
+	}
 }
 
 @media only screen and (max-width: 479px){
@@ -169,4 +169,5 @@ Presentation Styles (Editable)
 .toggle:after {
 	text-align: center; 
 	width: 100%;
+	
 }
