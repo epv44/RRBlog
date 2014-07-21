@@ -3,43 +3,68 @@ Functional Styles (Required)
 ---------------------------------*/
 
 .header { position: relative; }
-#toggle, .toggle { display: none; }
-.menu > li { list-style: none; float:left;	}
 
-.clearfix:before, 
-.clearfix:after { 
-	display: table; 
-	content: ""; 
-}
-.clearfix:after { 
-	clear: both; 
-}
-.clearfix {
-	*zoom: 1;
+#toggle, .toggle { 
+	display: none; 
+	float: right;
+	padding-top: 20px; 
+
 }
 
-@media only screen and (max-width: 783px){
+.menu > li { list-style: none; float:right;	}
+
+/* Nicolas Gallagher micro clearfix */
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+@media only screen and (max-width: 708px){
 	.menu { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
 	.menu > li { display: block; width: 100%; margin: 0; }
 	.menu > li > a { display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
-	#toggle:checked + div .menu { display: block; opacity: 1;}
+	.toggle { 
+		display: block; 
+		position: relative; 
+		cursor: pointer; 
+		-webkit-touch-callout: none; 
+		-webkit-user-select: none; 
+		user-select: none; 
+	}
+	#toggle:checked + div .menu { 
+		display: block; 
+		opacity: 1;
+	}
 }
 
 
 /*--------------------------------
 Presentation Styles (Editable)
 ---------------------------------*/
-.header{
-	min-height: 100px;
-	height: 100%;
-	padding: 0 20px;
-	background: #FFFFFF;
+
+@media only screen and (min-width : 100px){
+	.header{
+		min-height: 100px;
+		height: 100%;
+		padding: 0 20px;
+		background-image: url(img/eyeOnly.png);
+		background-color: #fff;
+		background-repeat: no-repeat;
+	}
+}
+
+@media only screen and (min-width: 870px) {
+    .header{
+		min-height: 100px;
+		height: 100%;
+		padding: 0 20px;
+		background-image: url(img/suddenstartlogocopy.png);
+		background-color: #fff;
+		background-repeat: no-repeat;
+	}
 }
 
 .header > h1 {
 	float: left;
-	padding: 0px 0 0;	
+	padding: 30px 0 0;	
 	font-style: italic;
 	font-family: Georgia;
 	font-size: 28px;
@@ -59,8 +84,8 @@ Presentation Styles (Editable)
 	display: block;
 	padding: 42px 20px;
 	text-decoration: none;
-	font-weight: 500;
-	font-size: 18px;
+	font-weight: normal;
+	font-size: 16px;
 	line-height: 1;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -82,7 +107,7 @@ Presentation Styles (Editable)
 	z-index: 2;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 708px){
 .menu{
 	background: #FFFFFF;
 	border-top: 1px solid #51C1F1;
@@ -103,14 +128,25 @@ Presentation Styles (Editable)
 }
 
 .toggle:after {
-	content:"";  
-    background: url(img/nav-icon.png) no-repeat;  
-    width: 30px;  
-    height: 30px;  
-    display: inline-block;  
-    position: absolute;  
-    right: 15px;  
-    top: 10px;  
+	content: attr(data-open);
+	display: block;
+	width: 200px;
+	margin: 33px 0;
+	padding: 10px 50px;
+	background-image: url(img/nav-icon.png);
+	background-repeat: no-repeat;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .toggle:hover:after{
@@ -122,39 +158,16 @@ Presentation Styles (Editable)
 	}
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 479px){
 	.header > h1 {
 		text-align: center;
-
+	}
 }
 .header > h1, .nav, .toggle:after{
 	float: none;
 }
-
 .toggle:after {
-	text-align: center; width: 100%;
+	text-align: center; 
+	width: 100%;
 	}
 }
-
-@media (min-width: 300px){
-	.source-image {
-	width: 230px;
-	margin-top: 12px;
-	}
-}
-@media (min-width: 430px){
-	.source-image {
-	width: 330px;
-	margin-top: 12px;
-	}
-}
-
-@media (min-width: 786px){
-	.source-image {
-	width: 430px;
-	margin-top: 12px;
-	}
-}
-
-
-
